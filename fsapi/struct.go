@@ -18,7 +18,7 @@ type Section struct {
 }
 
 type Context struct {
-	Name      string      `xml:"name,attr"`
+	Name      string      `xml:"name,attr,omitempty"`
 	Extension []Extension `xml:"extension"`
 }
 
