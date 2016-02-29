@@ -59,6 +59,7 @@ type Extension struct {
 type Condition struct {
 	Field      string   `xml:"field,attr"`
 	Expression string   `xml:"expression,attr"`
+	Break      string   `xml:"break,attr,omitempty"`
 	Action     []Action `xml:"action"`
 }
 
