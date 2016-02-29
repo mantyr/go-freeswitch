@@ -4,14 +4,17 @@
     <binding name="dialplan">
       <param name="gateway-url" value="http://127.0.0.1:5070/fsapi" bindings="dialplan"/>
       <param name="timeout" value="10"/>
+      <param name="method" value="POST"/>
     </binding>
     <!--<binding name="dialplan">
       <param name="gateway-url" value="http://master.fscli.service.jotcdn.net:5070/fsapi" bindings="dialplan"/>
       <param name="timeout" value="10"/>
+      <param name="method" value="POST"/>
     </binding>
     <binding name="dialplan backup">
       <param name="gateway-url" value="http://slave.fscli.service.jotcdn.net:5070/fsapi" bindings="dialplan"/>
       <param name="timeout" value="10"/>
+      <param name="method" value="POST"/>
     </binding>-->
   </bindings>
 </configuration>
