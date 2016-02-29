@@ -53,6 +53,7 @@ type User struct {
 
 type Extension struct {
 	Name      string      `xml:"name,attr"`
+	Continue  string      `xml:"continue,attr,omitempty"`
 	Condition []Condition `xml:"condition"`
 }
 
