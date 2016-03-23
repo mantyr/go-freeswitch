@@ -9,6 +9,7 @@ digraph struct {
   Configuration -> Params
   Domain -> Params
   Domain -> Groups
+  Domain -> Users
   Groups -> Users
   Users -> Params
   Extension -> Condition

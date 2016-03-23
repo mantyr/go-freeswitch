@@ -33,6 +33,7 @@ type Domain struct {
 	Name   string   `xml:"name,attr"`
 	Params []Param  `xml:"params,omitempty>param"`
 	Groups []Groups `xml:"groups,omitempty>group"`
+	User   []User   `xml:"user,omitempty"`
 }
 
 type Param struct {
@@ -48,7 +49,7 @@ type Groups struct {
 type User struct {
 	Id        string  `xml:"id,attr"`
 	Cacheable uint    `xml:"cacheable,attr,omitempty"`
-	Params    []Param `xml:"params>param"`
+	Params    []Param `xml:"params>param,omitempty"`
 }
 
 type Extension struct {
